@@ -1,0 +1,8 @@
+#!/bin/bash
+#SBATCH --verbose
+#SBATCH --partition=gpu
+#SBATCH --reservation="eece5640"
+#SBATCH --gres=gpu:1
+#SBATCH --time=00:30:00
+#SBATCH --job-name=HW4Q3YZ
+$SRUN ./Q3

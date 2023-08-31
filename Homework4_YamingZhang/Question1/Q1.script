@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH --verbose
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=16
+#SBATCH --cpus-per-task=1
+#SBATCH --time=00:30:00
+#SBATCH --job-name=HW4Q1YZ
+#SBATCH --partition=express
+$SRUN mpirun -mca btl_base_warn_component_unused 0 Q1
